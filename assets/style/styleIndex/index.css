@@ -9,8 +9,8 @@ h1 {
   font-family: "Elsie", cursive;
   font-style: bold;
   font-weight: 800;
-  font-size: 4rem;
-  color: #1D6DB6;
+  font-size: 8vh;
+  color: #4e5153;
   opacity: 0.9;
 }
 
@@ -18,8 +18,8 @@ h2 {
   font-family: "Elsie", cursive;
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
-  color: #1D6DB6;
+  font-size: 6vh;
+  color: #3b3c3d;
   opacity: 0.9;
   margin-bottom: 2%;
 }
