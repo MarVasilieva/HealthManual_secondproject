@@ -1,1 +1,93 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__wave {
+  width: 100%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  text-align: center;
+  padding-top: 1.8%;
+  font-weight: 600;
+  line-height: 140%;
+  color: rgb(38, 37, 37);
+}
+
+.main__container {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.main__container ol, .main__container ul {
+  padding-left: 3%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.main__container .symptoms {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 2%;
+  margin-top: -60px;
+}
+.main__container .symptoms .symptoms__list {
+  text-align: justify;
+  font-size: 20px;
+  opacity: 0.7;
+  padding: 2%;
+  color: #5B5B5B;
+  font-weight: 500;
+  line-height: 2;
+}
+.main__container .symptoms img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__container .reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  text-align: justify;
+  font-size: 20px;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #5B5B5B;
+}
+.main__container .reasons img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__container .help-stressed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  row-gap: 4%;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  font-size: 20px;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #5B5B5B;
+}
+.main__container .help-stressed img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
