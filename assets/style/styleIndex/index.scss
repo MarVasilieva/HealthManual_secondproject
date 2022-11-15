@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap');
 //font-family: 'Elsie', cursive;
 //font-family: 'Roboto', sans-serif;
-
+@font-face {
+  font-family: 'Natasha';
+  src: url(/assets/fonts/Natasha.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,32 +12,32 @@
 }
 
 h1 {
-  font-family: 'Elsie', cursive;
+  font-family: 'Natasha';
   font-style: bold;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 52px;
   color: #1D6DB6;
   opacity: 0.9;
 }
 
 h2 {
-  font-family: 'Elsie', cursive;
+  font-family: 'Natasha';
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
-  color: #1D6DB6;
+  font-size: 48px;
+  color: red;
   opacity: 0.9;
   margin-bottom: 2%;
 }
 
 p,
 h3 {
-  font-family: 'Roboto', sans-serif;
+ font-family: 'Natasha';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 2rem;
-  color: #1D6DB6;
+  line-height: 32px;
+  color: #696969;
 }
 
 img {
@@ -60,57 +63,57 @@ body {
     display: grid;
     align-content: center;
     text-align: justify;
+    p{
+      padding-top: 30px;
+    }
   }
 
   .title__button {
     display: flex;
-    padding-top: 10%;
-    position: relative;
-    top: 30%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    gap: 30px;
-    justify-content: space-between;
-  }
-
-  .btn {
-    position: relative;
-    display: block;
-    align-content: center;
-    color: #4363BA;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    font-weight: 600;
-    text-decoration: none;
-    border: 5px solid #4363BA;
-    border-radius: 18px;
-    padding: 20px 80px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 1s all ease;
-  }
-
-  .btn::before {
-    background: #679FDB;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: all 0.6s ease;
-    text-transform: none;
-  }
-
-  .btn1::before {
-    width: 0%;
-    height: 100%;
-  }
-
-  .btn1:hover::before {
-    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+    a {
+      text-decoration: none;
+      color:#fff;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .button_1{
+      background-color: #1D6DB6; 
+      width: 182px;
+          height: 64px;
+          border-radius: 50px;
+          cursor: pointer;
+          outline: none;
+          border:none; 
+          a {
+            color:#fff;
+      }
+    }
+    .button_1:hover {
+      opacity:1;
+      border: 8px solid #fff;
+    }
+      .button_2{
+          width: 182px;
+          height: 64px;
+          border-radius: 50px;
+          cursor: pointer;
+          outline: none;
+          background: transparent;
+          border:5px solid red; 
+        
+          a {
+            color:red;
+          }
+      }
+      .button_2:hover {
+        opacity:1;
+        border: 8px solid red;
+      }
   }
 
   .health-manual__cards {
@@ -127,7 +130,7 @@ body {
 .manual__text:hover {
      opacity:1;
       h3 {
-        font-family: 'Elsie', cursive;
+        font-family: 'Natasha';
         font-style: bold;
   font-weight: 800;
         font-size: 40px;
@@ -159,7 +162,6 @@ body {
       opacity:1;
       border: 8px solid #1D6DB6;
     }
-
 
     .health-manual__stress {
       display: grid;
@@ -214,7 +216,9 @@ body {
       padding: 20px;
   } 
   } 
+  
 }
+
 @media (min-width: 750px) and (max-width: 866px) {
   .health-manual {
     height: 100vh;
@@ -233,3 +237,41 @@ body {
   } 
 } 
 }
+
+@media (min-width: 867px) and (max-width: 1530px) {
+  .health-manual {
+  height: 100%;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     justify-content: center;
+     .health-manual__cards {
+      display: grid;
+      grid-template-columns: (1fr 1fr);
+      grid-template-rows: auto;
+    height: 100vh;
+      gap: 10px;
+      padding: 20px;
+  } 
+} 
+}
+@media (min-width: 300px) and (max-width: 749px) {
+  .health-manual {
+  height: 100%;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+     justify-content: center;
+     .health-manual__cards {
+      display: grid;
+      grid-template-columns: (1fr);
+      grid-template-rows: auto;
+    height: 100vh;
+      gap: 10px;
+      padding: 20px;
+  } 
+} 
+}
+

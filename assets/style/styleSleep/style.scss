@@ -9,7 +9,7 @@ h2{
     text-align: center;
     padding-top: 1.8%;
     font-weight: 600;
-    line-height: 140%;
+   font-size: 1.5em;
     color: #63a0dc;
  }
 .header__wave {
@@ -26,7 +26,7 @@ h2{
     padding-left: 2%;
     padding-right: 2%;
     
-ol, ul {
+ul {
     padding-left: 3%;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -36,26 +36,26 @@ ol, ul {
     width: 100%;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    gap: 2%;
     text-align: justify;
+    padding-right: 4%;
     font-size:20px;
     opacity: 0.8;
     color: #5B5B5B;
         font-weight: 500;
-        line-height: 2;
+        line-height: 1.5;
         img{
-        width: 100%;
+        width: 80%;
         object-fit: cover;
     }
     }
     .container__bads{
         width:100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
         grid-template-rows: 1fr ;
         justify-content: center;
         text-align: justify;
@@ -64,14 +64,14 @@ ol, ul {
         font-size:20px;
         opacity: 0.7;
         font-weight: 500;
-        line-height: 1.6;
+        line-height: 1.5;
         color: #5B5B5B;
        
     }
     .container__vitamind{
         width:100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
         grid-template-rows: 1fr ;
         align-items: center;
         justify-content:center ;
@@ -82,7 +82,7 @@ ol, ul {
         font-size:22px;
         opacity: 0.7;
         font-weight: 500;
-        line-height: 1.8;
+        line-height: 1.5;
         color: #5B5B5B;
         img{
             width: 100%;
