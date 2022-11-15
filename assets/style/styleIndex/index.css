@@ -9,8 +9,8 @@ h1 {
   font-family: "Elsie", cursive;
   font-style: bold;
   font-weight: 800;
-  font-size: 8vh;
-  color: #4e5153;
+  font-size: 4rem;
+  color: #1D6DB6;
   opacity: 0.9;
 }
 
@@ -18,8 +18,8 @@ h2 {
   font-family: "Elsie", cursive;
   font-style: normal;
   font-weight: 700;
-  font-size: 6vh;
-  color: #3b3c3d;
+  font-size: 3rem;
+  color: #1D6DB6;
   opacity: 0.9;
   margin-bottom: 2%;
 }
@@ -27,33 +27,31 @@ h2 {
 p,
 h3 {
   font-family: "Roboto", sans-serif;
-  font-style: bold;
-  font-weight: 600;
-  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 2rem;
-  text-transform: uppercase;
   color: #1D6DB6;
-  padding-top: 10%;
 }
 
 img {
   width: 100%;
 }
 
-main {
+body {
   background-color: #E0F1F3;
 }
 
 .health-manual {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 3fr;
+  grid-template-columns: 35% 3fr;
   grid-template-rows: 1fr;
   justify-content: center;
 }
 .health-manual .health-manual__title {
-  height: 100%;
+  height: 100vh;
   width: 40%;
   padding: 10%;
   display: grid;
@@ -109,7 +107,8 @@ main {
 .health-manual .health-manual__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 100vh;
   gap: 10px;
   padding: 20px;
 }
@@ -117,41 +116,103 @@ main {
   opacity: 0;
 }
 .health-manual .health-manual__cards .manual__text:hover {
-  padding: 30px;
   opacity: 1;
-  background-color: #fff;
-  text-align: center;
 }
 .health-manual .health-manual__cards .manual__text:hover h3 {
-  font-size: 2rem;
+  font-family: "Elsie", cursive;
+  font-style: bold;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+.health-manual .health-manual__cards .manual__text:hover h3 a {
+  text-decoration: none;
+  color: #fff;
 }
 .health-manual .health-manual__cards .health-manual__nutrition {
   display: grid;
   align-content: center;
   background-color: #76B28E;
 }
+.health-manual .health-manual__cards .health-manual__nutrition:hover {
+  opacity: 1;
+  border: 8px solid #A2D7E6;
+}
 .health-manual .health-manual__cards .health-manual__sleep {
   display: grid;
   align-content: center;
   background-color: #679FDB;
+}
+.health-manual .health-manual__cards .health-manual__sleep:hover {
+  opacity: 1;
+  border: 8px solid #1D6DB6;
 }
 .health-manual .health-manual__cards .health-manual__stress {
   display: grid;
   align-content: center;
   background-color: #B28990;
 }
+.health-manual .health-manual__cards .health-manual__stress:hover {
+  opacity: 1;
+  border: 8px solid #FDCD4B;
+}
 .health-manual .health-manual__cards .health-manual__meditation {
   display: grid;
   align-content: center;
   background-color: #FDCD4B;
 }
+.health-manual .health-manual__cards .health-manual__meditation:hover {
+  opacity: 1;
+  border: 8px solid #679FDB;
+}
 .health-manual .health-manual__cards .health-manual__sport {
   display: grid;
   align-content: center;
-  background-color: #A2D7E6;
+  background-color: #F09D74;
+}
+.health-manual .health-manual__cards .health-manual__sport:hover {
+  opacity: 1;
+  border: 8px solid #A2D7E6;
 }
 .health-manual .health-manual__cards .health-manual__supplements {
   display: grid;
   align-content: center;
-  background-color: #F09D74;
+  background-color: #A2D7E6;
+}
+.health-manual .health-manual__cards .health-manual__supplements img {
+  width: 90%;
+  padding-left: 30px;
+}
+.health-manual .health-manual__cards .health-manual__supplements:hover {
+  opacity: 1;
+  border: 8px solid #B28990;
+}
+@media (min-width: 1900px) and (max-width: 3000px) {
+  .health-manual .health-manual__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 866px) {
+  .health-manual {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .health-manual .health-manual__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
