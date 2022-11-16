@@ -12,6 +12,23 @@
   height: 35vh;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+.header__wave .header__nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+.header__wave a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 600;
+}
+.header__wave a:hover,
+.header__wave a:focus {
+  color: rgb(126, 129, 132);
+  outline: none;
+}
 
 .container {
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -53,8 +70,12 @@
   font-weight: 500;
   line-height: 1.5;
 }
+.container .container__sports .live {
+  border-radius: 2%;
+  background-color: #f8f9f9;
+}
 .container .container__sports img {
-  width: 80%;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -105,11 +126,18 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  justify-content: center;
   background-image: url("../../images/imgSports/img/wave (7).svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 35vh;
+  color: antiquewhite;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding-bottom: 1%;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 600;
 }
 .footer img {
   width: 100%;
