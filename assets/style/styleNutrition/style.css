@@ -42,8 +42,6 @@ h2, h1 {
 
 .container {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 .container h1 {
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -68,72 +66,69 @@ h2, h1 {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  gap: 2%;
   text-align: justify;
-  font-size: 20px;
+  background-color: #e8f4ed;
+  font-size: 18px;
+  padding-right: 5%;
+  padding-bottom: 3%;
   opacity: 0.8;
   color: #5B5B5B;
   font-weight: 500;
   line-height: 1.4;
 }
 .container .container__ration img {
-  width: 100%;
+  width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2%;
+  padding-left: 15%;
 }
 .container .container__lunch {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   grid-template-rows: 1fr;
   justify-content: center;
   text-align: justify;
-  gap: 2%;
-  text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.8;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #5B5B5B;
+}
+.container .container__lunch img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container .container__dinner {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   text-align: justify;
-  gap: 2%;
   margin-top: 2%;
   text-align: justify;
-  font-size: 22px;
+  font-size: 18px;
   opacity: 0.8;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #5B5B5B;
-}
-.container .container__dinner img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .container .container__mode {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   text-align: justify;
-  gap: 2%;
   margin-top: 2%;
   text-align: justify;
-  font-size: 22px;
+  font-size: 18px;
   opacity: 0.8;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #5B5B5B;
 }
 .container .container__mode img {

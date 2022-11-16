@@ -26,7 +26,7 @@ h2{
     }
     a {
         text-decoration: none;
-        color: rgb(187, 185, 182);
+        color: rgb(147, 146, 145);
         font-size: 1.5vw;
         font-style: normal;
         font-weight: 600;
@@ -34,15 +34,14 @@ h2{
     
     a:hover,
     a:focus {
-        color: rgb(126, 129, 132);
+        color: rgb(194, 196, 198);
         outline: none;
     }
 }
 
 .container {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    padding-left: 2%;
-    padding-right: 2%;
+    
     
 ul {
     padding-left: 3%;
@@ -60,45 +59,54 @@ ul {
     align-items: center;
     text-align: justify;
     padding-right: 4%;
-    font-size:20px;
-    opacity: 0.8;
+    font-size:18px;
+    opacity: 0.9;
     color: #5B5B5B;
         font-weight: 500;
         line-height: 1.5;
         img{
-        width: 80%;
+        width: 90%;
         object-fit: cover;
+        padding-left: 10%;
     }
     }
     .container__bads{
         width:100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
-        grid-template-rows: 1fr ;
-        justify-content: center;
+       // display: grid;
+       // grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+        //grid-template-rows: 1fr ;
+        //justify-content: center;
         text-align: justify;
         gap:2%;
         text-align: justify;
-        font-size:20px;
-        opacity: 0.7;
+        font-size:18px;
+        opacity: 0.8;
         font-weight: 500;
-        line-height: 1.5;
+        line-height: 1.4;
         color: #5B5B5B;
-       
+        .recomendations{
+            background-color: antiquewhite;
+            padding-right: 3%;
+            padding-bottom: 1%;
+        }
+       .supplements {
+        padding-left: 1%;
+        padding-right: 2%;
+       }
     }
     .container__vitamind{
         width:100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
-        grid-template-rows: 1fr ;
+        grid-template-rows: 530px ;
         align-items: center;
         justify-content:center ;
         text-align: justify;
-        gap:2%;
-        margin-top: 2%;
+        background-color: antiquewhite;
         text-align: justify;
-        font-size:22px;
-        opacity: 0.7;
+        font-size:18px;
+        opacity: 0.8    ;
+        padding-left: 4%;
         font-weight: 500;
         line-height: 1.5;
         color: #5B5B5B;
@@ -120,7 +128,7 @@ ul {
     height: 35vh;
     color:  rgb(126, 129, 132);
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    padding-left: 10%;
+    padding-left: 21%;
     padding-bottom: 1%;
     font-size: 1.5vw;
     font-style: normal;

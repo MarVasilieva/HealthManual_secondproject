@@ -14,7 +14,7 @@ h2{
  }
  
 .header__wave {
-    background-image: url('../../images/imgSupplements/img/wave\ \(19\).svg') ;
+    background-image: url('../../images/imgSupplements/img/wave\ \(20\).svg') ;
     background-repeat:no-repeat;
     background-size: cover;
     width: 100%;
@@ -42,8 +42,7 @@ h2{
 
 .container {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    padding-left: 2%;
-    padding-right: 2%;
+    
     h1{
         font-family:'M PLUS Rounded 1c', sans-serif;
         font-style: normal;
@@ -54,11 +53,7 @@ h2{
     margin-top: 1em;
     margin-bottom: 1em;
 }
-img{
-   
-    width: 100%;
-    object-fit: cover;
-}
+
 .container__vision{
     width: 100%;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -69,15 +64,17 @@ img{
     align-items: center;
    padding-right: 5%;
     text-align: justify;
-    font-size:20px;
+    font-size:18px;
     opacity: 0.8;
     color: #5B5B5B;
         font-weight: 500;
         line-height: 1.5;
+        background-color: rgb(249, 246, 243);
+        
        img{
         width: 71%;
         object-fit: cover;
-        margin-right: 8%;
+        padding-left: 13%;
     }
     }
     .container__brain{
@@ -90,15 +87,17 @@ img{
         text-align: justify;
         gap:2%;
         text-align: justify;
-        font-size:20px;
+        font-size:18px;
         opacity: 0.8;
+        padding-left: 3%;
         font-weight: 500;
         line-height: 1.5;
         color: #5B5B5B;
+        
         img {
             width: 70%;
             object-fit: cover;
-            margin-left: 6%;
+            padding-left: 15%;
         }
        
     }

@@ -61,20 +61,16 @@
         align-items: center;
         padding-right:4% ;
         text-align: justify;
-        font-size:20px;
+        font-size:18px;
         opacity: 0.8;
         color: #5B5B5B;
             font-weight: 500;
             line-height: 1.5;
-            .live{
-              
-                border-radius: 2%;
-                background-color: #f8f9f9;
-            
-            }
+        }
             img{
-            width: 70%;
+            width: 80%;
             object-fit: cover;
+            padding-left: 10%;
         }
         }  
         .container__livehacks{
@@ -87,7 +83,7 @@
             text-align: justify;
             gap:2%;
             text-align: justify;
-            font-size:20px;
+            font-size:18px;
             opacity: 0.7;
             font-weight: 500;
             line-height: 1.6;
@@ -107,7 +103,7 @@
             text-align: justify;
             padding-right: 4%;
             text-align: justify;
-            font-size:20px;
+            font-size:18px;
             opacity: 0.7;
             font-weight: 500;
             line-height: 1.6;
@@ -117,7 +113,7 @@
                 object-fit: cover;
             }
         }
-}
+
 .footer {
     display: flex;
     flex-direction: row;
