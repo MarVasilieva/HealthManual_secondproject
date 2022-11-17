@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Natasha";
+  src: url(/assets/fonts/Natasha.ttf);
+}
 .header__wave {
-  background-image: url("../../images/imgSports/img/wave (6).svg");
+  background-image: url("../../images/imgSports/img/wave (24).svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -32,8 +36,8 @@
 
 .container {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .container ul {
   padding-left: 3%;
@@ -46,13 +50,22 @@
      object-fit: cover;
 }
 .container h2 {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Natasha";
   font-style: normal;
   text-align: center;
   padding-top: 1.8%;
   font-weight: 600;
   font-size: 1.4em;
   color: #63a0dc;
+}
+.container h3 {
+  font-family: "Natasha";
+  font-style: normal;
+  text-align: center;
+  padding-top: 1.8%;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #F09D74;
 }
 .container .container__sports {
   width: 100%;
@@ -65,8 +78,10 @@
   padding-right: 4%;
   text-align: justify;
   font-size: 18px;
-  opacity: 0.8;
-  color: #5B5B5B;
+  opacity: 0.9;
+  background-color: #E0F1F3;
+  border-radius: 10px;
+  color: #696969;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -110,10 +125,12 @@
   padding-right: 4%;
   text-align: justify;
   font-size: 18px;
-  opacity: 0.7;
+  opacity: 0.9;
   font-weight: 500;
   line-height: 1.6;
   color: #5B5B5B;
+  background-color: #e0e8f3;
+  border-radius: 10px;
 }
 .container__simptoms img {
   width: 80%;
@@ -126,12 +143,12 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  background-image: url("../../images/imgSports/img/wave (7).svg");
+  background-image: url("../../images/imgSports/img/wave (26).svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 35vh;
-  color: antiquewhite;
+  color: rgb(235, 219, 199);
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding-bottom: 1%;
   font-size: 1.5vw;

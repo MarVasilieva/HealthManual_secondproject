@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Natasha";
+  src: url(/assets/fonts/Natasha.ttf);
+}
 h2 {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Natasha";
   font-style: normal;
   text-align: center;
   padding-top: 1.8%;
@@ -41,7 +45,8 @@ h2 {
 }
 
 .container {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .container h1 {
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -61,14 +66,16 @@ h2 {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   padding-right: 5%;
+  padding-left: 4%;
   text-align: justify;
   font-size: 18px;
   opacity: 0.8;
   color: #5B5B5B;
   font-weight: 500;
   line-height: 1.5;
-  background-color: rgb(249, 246, 243);
+  background-color: rgb(230, 232, 235);
 }
 .container .container__vision img {
   width: 71%;
