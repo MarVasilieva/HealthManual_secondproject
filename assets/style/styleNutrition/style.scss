@@ -8,8 +8,8 @@
 //font-family: 'Elsie', cursive;
 //font-family: 'Roboto', sans-serif;
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+ padding: 0;
     box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ p {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 24px;
     color: #696969;
 }
 
@@ -81,12 +81,12 @@ p {
 .container__information-first {
     height: 100vh;
     width: 100%;
-    margin-top: 50px;
+
     display: grid;
     grid-template-columns: 30% auto;
     grid-template-rows: 40% auto;
     gap: 20px;
-    padding: 20px;
+    padding: 4%;
 
     .important {
         display: grid;
@@ -123,7 +123,10 @@ p {
         background-color: #E0F1F3;
         border-radius: 10px;
     }
+    
 }
+
+
 
 .container__information-mirror {
     width: 100%;
@@ -132,8 +135,7 @@ p {
     grid-template-columns: auto 30%;
     grid-template-rows: 40% auto;
     gap: 20px;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 4%;
 
     .important {
         display: grid;
@@ -184,8 +186,8 @@ p {
     grid-template-columns: auto 30%;
     grid-template-rows: 40% auto;
     gap: 20px;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 4%;
+    
 
     .important {
         width: 100%;
@@ -239,6 +241,7 @@ p {
     flex-direction: row;
    align-items: flex-end;
    justify-items: center;
+   
     background-image: url('../../images/imgNutrition/img/wave\ \(12\).svg') ;
     background-repeat:no-repeat;
     background-size: cover;
@@ -248,7 +251,8 @@ p {
     color: antiquewhite;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     padding-bottom: 1%;
-    font-size: 1.5vw;
+    padding-left: 4%;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
    }
@@ -259,4 +263,46 @@ p {
         object-fit: cover;
     }
 
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+    * {
+        margin: auto;
+      }
+      h1, h2 {
+        font-size: 24px;
+      }
+    p {
+        font-size: 12px;
+    }
+    img {
+        width: 50%;
+    }
+    .container__information-first {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 4%; 
+        
+    }
+    .container__information-mirror {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 4%; 
+    }
+    .container__information-last {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 4%; 
+        .part-first {
+            display: none;
+        }
+    }
+    .footer {
+        display: none;
+    }
 }

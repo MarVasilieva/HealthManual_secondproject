@@ -111,7 +111,6 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: center;
   background-image: url("../../images/imgSupplements/img/wave (17).svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,7 +119,8 @@ h2 {
   color: antiquewhite;
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding-bottom: 1%;
-  font-size: 1.5vw;
+  padding-left: 4%;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
 }
