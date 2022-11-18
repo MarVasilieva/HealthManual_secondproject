@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,21 +12,30 @@
 h2 {
   font-family: "Natasha";
   font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
   text-align: center;
   padding-top: 1.8%;
-  font-weight: 600;
-  font-size: 1.5em;
   color: #63a0dc;
 }
 
 h3 {
   font-family: "Natasha";
   font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
   text-align: center;
   padding-top: 1.8%;
-  font-weight: 600;
-  font-size: 1.5em;
   color: #F09D74;
+}
+
+p, ul {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #696969;
 }
 
 .header__wave {
@@ -62,13 +72,14 @@ h3 {
   padding-right: 4%;
 }
 .container ul {
+  font-family: "Roboto", sans-serif;
   padding-left: 3%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 .container .container__measures {
   width: 100%;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: 1fr;

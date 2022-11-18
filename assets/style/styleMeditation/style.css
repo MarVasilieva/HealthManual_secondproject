@@ -12,26 +12,26 @@
 h1 {
   font-family: "Natasha";
   font-style: normal;
-  color: #2c557b;
   font-size: 48px;
   text-align: right;
   padding: 20px;
+  color: #2c557b;
 }
 
 h2 {
   font-family: "Natasha";
   font-style: normal;
   font-weight: 600;
-  color: #63a0dc;
   font-size: 36px;
+  color: #63a0dc;
 }
 
 ul, h3 {
   font-family: "Natasha";
   font-style: normal;
   font-weight: 600;
-  color: white;
   font-size: 18px;
+  color: white;
 }
 
 img {
@@ -142,4 +142,12 @@ p {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+  .container__information-last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

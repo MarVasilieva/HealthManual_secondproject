@@ -247,6 +247,7 @@ p {
     width: 50%;
   }
   .container__information-first {
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -254,17 +255,14 @@ p {
     padding: 4%;
   }
   .container__information-mirror {
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 4%;
   }
   .container__information-last {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 4%;
   }
   .container__information-last .part-first {
     display: none;

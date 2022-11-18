@@ -3,20 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap');
 @font-face {
     font-family: 'Natasha';
     src: url(/assets/fonts/Natasha.ttf);
 }
 h2{
-    font-family: 'Natasha';
-    
+    font-family: "Natasha";
     font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
     text-align: center;
     padding-top: 1.8%;
-    font-weight: 600;
      color: #63a0dc;
-     font-size: 1.5em;
- }
+}
  
 .header__wave {
     background-image: url('../../images/imgSupplements/img/wave\ \(20\).svg') ;
@@ -49,12 +49,12 @@ h2{
    padding-left: 4%;
    padding-right: 4%;
     
-    h1{
-        font-family:'M PLUS Rounded 1c', sans-serif;
-        font-style: normal;
-        color: #2c557b;
-     }    
- ul {
+  
+ ul, p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
     padding-left: 3%;
     margin-top: 1em;
     margin-bottom: 1em;
