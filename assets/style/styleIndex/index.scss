@@ -68,54 +68,24 @@ body {
     }
   }
 
-  .title__button {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 50px;
-    a {
-      text-decoration: none;
-      color:#fff;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 23px;
-    }
-    .button_1{
-      background-color: #1D6DB6; 
-      width: 182px;
-          height: 64px;
-          border-radius: 50px;
-          cursor: pointer;
-          outline: none;
-          border:none; 
-          a {
-            color:#fff;
-      }
-    }
-    .button_1:hover {
-      opacity:1;
-      border: 8px solid #fff;
-    }
-      .button_2{
-          width: 182px;
-          height: 64px;
-          border-radius: 50px;
-          cursor: pointer;
-          outline: none;
-          background: transparent;
-          border:5px solid red; 
-        
-          a {
-            color:red;
-          }
-      }
-      .button_2:hover {
-        opacity:1;
-        border: 8px solid red;
-      }
+  .cons__button {
+   background-color: #1D6DB6;
+   width: 250px;
+   height: 60px;
+   border-radius: 15px;
+  span {
+font-family: 'Natasha';
+font-size: 20px;
+   }
+  }
+  .modal-body img {
+    max-width: 100px;
   }
 
+  .button_1 {
+    width: 150px;
+    font-size: 20px;
+  }
   .health-manual__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -124,11 +94,8 @@ body {
     gap: 10px;
     padding: 20px;
 
-   .manual__text {
-     opacity: 0;
- }
-.manual__text:hover {
-     opacity:1;
+.manual__text {
+    
       h3 {
         font-family: 'Natasha';
         font-style: bold;

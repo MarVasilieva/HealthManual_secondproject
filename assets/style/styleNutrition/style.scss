@@ -19,7 +19,7 @@ h1 {
     color: #2c557b;
     font-size: 48px;
     text-align: right;
-    padding: 20px;
+    padding-right:10%;
 }
 
 h2 {
@@ -137,7 +137,7 @@ p {
 
     .important {
         display: grid;
-        background-color: #98FB98;
+        background-color: #abd3be;
         border-radius: 10px;
         align-items: center;
         padding-left: 20px;
@@ -238,7 +238,7 @@ p {
     display: flex;
     flex-direction: row;
    align-items: flex-end;
-   justify-items: flex-end;
+   justify-items: center;
     background-image: url('../../images/imgNutrition/img/wave\ \(12\).svg') ;
     background-repeat:no-repeat;
     background-size: cover;
