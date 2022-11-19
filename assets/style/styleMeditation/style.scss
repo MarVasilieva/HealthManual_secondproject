@@ -17,8 +17,7 @@ h1 {
     font-family: 'Natasha';
     font-style: normal;
     font-size: 48px;
-    text-align: right;
-    padding: 20px;
+    padding: 4%;
     color: #2c557b;
 }
 
@@ -94,12 +93,6 @@ p {
         align-items: center;
         padding-left: 20px;
         justify-content: center;
-
-        h2 {
-    
-            font-size: 18px;
-            color: #63a0dc;
-        }
     }
 
     .title {
@@ -107,10 +100,6 @@ p {
         display: grid;
         justify-content: center;
         padding: 30px;
-
-        h2 {
-            color: #1D6DB6;
-        }
     }
 
     .part-first {
