@@ -1,0 +1,21 @@
+$blueColor: #1D6DB6;
+$blueColor2: #A2D7E6;
+$blueColor3: #679FDB;
+$greenColor: #76B28E;
+$violetColor: #B28990;
+$yellowColor1: #FDCD4B;
+$yellowColor2: #F09D74;
+$textColor: #696969;
+$bodyColor: #E0F1F3;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap');
+@font-face {
+    font-family: 'Natasha';
+    src: url(/assets/fonts/Natasha.ttf);
+  }
+
