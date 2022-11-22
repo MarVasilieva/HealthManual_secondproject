@@ -1,101 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap');
-//font-family: 'Elsie', cursive;
-//font-family: 'Roboto', sans-serif;
-@font-face {
-  font-family: 'Natasha';
-  src: url(/assets/fonts/Natasha.ttf);
-}
+@import '../vars/var';
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ @include reset;
 }
 
 h1 {
-  font-family: 'Natasha';
-  font-style: bold;
-  font-weight: 800;
-  font-size: 3rem;
-  color: #1D6DB6;
-  opacity: 0.9;
+  @include title
 }
 
 h2 {
-  font-family: 'Natasha';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.5rem;
+  @include titleSmall;
   color: red;
-  opacity: 0.9;
   margin-bottom: 2%;
 }
 
 p,
 h3 {
- font-family: 'Natasha';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 2rem;
-  color: #696969;
+  @include text;
 }
 
 img {
-  width: 100%;
+  @include size;
 }
 
 body {
-  background-color: #E0F1F3;
+  background-color: $bodyColor;
 }
 
 .health-manual {
-  width: 100%;
+  height: 100vh;
+  @include size;
   display: grid;
   grid-template-columns: 35% 3fr;
   grid-template-rows: 1fr;
   justify-content: center;
 
   .health-manual__title {
-    width: 100%;
-    display: grid;
-    align-content: center;
+    @include size;
+    @include grid;
     text-align: justify;
-   .title__info {
-    padding: 10px;
-   }
+
+    .title__info {
+      padding: 4%;
+    }
+  }
+
+  .title__button {
+    padding-left: 4%;
   }
 
   .cons__button {
-   background-color: #1D6DB6;
-   width: 250px;
-   height: 60px;
-   border-radius: 15px;
-  span {
-font-family: 'Natasha';
-font-size: 1rem;
-   }
+    background-color: $blueColor;
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+    span {
+      font-family: 'Natasha';
+      font-size: 1rem;
+    }
   }
+
   .modal-body img {
-    max-width: 100px;
+    max-width: 200px;
   }
 
   .button_1 {
     width: 150px;
     font-size: 20px;
   }
+
   .health-manual__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-   grid-template-rows: auto;
+    grid-template-rows: auto;
     gap: 10px;
     padding: 20px;
 
-.manual__text {
-    
+    .manual__text {
       h3 {
-        font-family: 'Natasha';
-        font-style: bold;
-  font-weight: 800;
         font-size: 2.5rem;
         text-align: center;
         a {
@@ -103,130 +85,135 @@ font-size: 1rem;
           color: #fff;
         }
       }
-    } 
+    }
 
     .health-manual__nutrition {
-   display: grid;
-    align-content: center;
-      background-color: #76B28E;
-     
+      @include grid;
+      background-color: $greenColor;
     }
+
     .health-manual__nutrition:hover {
-      opacity:1;
-      border: 8px solid #A2D7E6;
+      @include hover;
+      color: $blueColor2;
     }
 
     .health-manual__sleep {
-      display: grid;
-      align-content: center;
-      background-color: #679FDB // background-color:#F39777;
+      @include grid;
+      background-color: $blueColor3
     }
+
     .health-manual__sleep:hover {
-      opacity:1;
-      border: 8px solid #1D6DB6;
+      @include hover;
+      color: $blueColor;
     }
 
     .health-manual__stress {
-      display: grid;
-      align-content: center;
-      background-color: #B28990;
+      @include grid;
+      background-color: $violetColor;
     }
+
     .health-manual__stress:hover {
-      opacity:1;
-      border: 8px solid #FDCD4B;
+      @include hover;
+      color: $yellowColor1;
     }
+
     .health-manual__meditation {
-      display: grid;
-      align-content: center;
-      background-color: #FDCD4B;
+      @include grid;
+      background-color: $yellowColor1;
     }
+
     .health-manual__meditation:hover {
-      opacity:1;
-      border: 8px solid #679FDB ;
+      @include hover;
+      color: $blueColor3;
     }
 
     .health-manual__sport {
-      display: grid;
-      align-content: center;
-      background-color: #F09D74;
+      @include grid;
+      background-color: $yellowColor2;
     }
+
     .health-manual__sport:hover {
-      opacity:1;
-      border: 8px solid #A2D7E6 ;
+      @include hover;
+      color: $greenColor;
     }
 
     .health-manual__supplements {
-      display: grid;
-      align-content: center;
-      background-color: #A2D7E6;
+      @include grid;
+      background-color: $blueColor2;
+
       img {
         width: 90%;
-       padding-left: 30px;
+        padding-left: 30px;
       }
     }
+
     .health-manual__supplements:hover {
-      opacity:1;
-      border: 8px solid #B28990;
+      opacity: 1;
+      border: 8px solid $violetColor;
     }
   }
+
   @media (min-width: 1900px) and (max-width: 3000px) {
     .health-manual__cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
       gap: 10px;
       padding: 20px;
-  } 
-  } 
-  
+    }
+  }
+
 }
 
 @media (min-width: 750px) and (max-width: 866px) {
   .health-manual {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-  flex-wrap: nowrap;
-     justify-content: center;
-     .health-manual__cards {
-      display: flex
+    @include size;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .health-manual__cards {
+      display: flex;
       gap: 10px;
       padding: 10px;
-  } 
-} 
+    }
+  }
 }
 
 @media (min-width: 867px) and (max-width: 1530px) {
   .health-manual {
-     width: 100%;
-     display: grid;
-  grid-template-columns: 1fr;
+    @include size;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 30% auto;
-     justify-content: center;
-     .health-manual__cards {
+    justify-content: center;
+
+    .health-manual__cards {
       display: grid;
       grid-template-columns: (1fr 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 10px;
       padding: 20px;
-  } 
-} 
+    }
+  }
 }
+
 @media (min-width: 200px) and (max-width: 749px) {
   .health-manual {
-     width: 100%;
-     display: grid;
-     grid-template-columns: 1fr;
+    @include size;
+    display: grid;
+    grid-template-columns: 1fr;
     // grid-template-rows: 1fr;
-     justify-content: center;
-     .health-manual__cards {
+    justify-content: center;
+
+    .health-manual__cards {
       display: grid;
       grid-template-columns: (1fr);
       grid-template-rows: 20% auto;
       gap: 10px;
       padding: 20px;
-  } 
-  
-} 
-}
+    }
 
+  }
+}
